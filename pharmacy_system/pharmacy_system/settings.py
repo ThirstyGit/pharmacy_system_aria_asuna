@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'home.apps.HomeConfig',
     'pharmacy.apps.PharmacyConfig',
     'user.apps.UserConfig',
     'django.contrib.admin',
@@ -126,4 +127,4 @@ STATIC_URL = '/static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-LOGIN_REDIRECT_URL = 'register'
+LOGIN_REDIRECT_URL = 'home'
