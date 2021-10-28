@@ -12,9 +12,17 @@
   <main class="form-container">
     <form class="form" action="" method="POST">
       {% csrf_token %}
+      <legend>SIGN IN</legend>
       {{ form.as_p }}
-      <button>Sign In</button>
-      <a href="{% url 'register' %}">Sign Up!</a>
+      <button class="auth-btn">Sign In</button>
+      <a href="{% url 'register' %}" class="button-anchor"><button class="redirect-btn" type="button">Register</button></a>
+      <div class="misc-container">
+        <label for="checkbox" class="checkbox-label">
+          <input type="checkbox" id="checkbox" />
+          Stay Signed In
+        </label>
+        <a href="/auth/forgot" class="anchor">Forgot Password?</a>
+      </div>
     </form>
   </main>
 </body>

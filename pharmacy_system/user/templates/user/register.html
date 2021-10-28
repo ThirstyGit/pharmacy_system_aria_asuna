@@ -12,10 +12,11 @@
   <main class="form-container">
     <form class="form" action="" method="POST">
       {% load static %}
+      <legend>REGISTER</legend>
       {% csrf_token %}
       {{ form.as_p }}
-      <button>Sign Up</button>
-      <a href="{% url 'login' %}">Sign In!</a>
+      <button class="auth-btn">Register</button>
+      <a href="{% url 'login' %}" class="button-anchor"><button class="redirect-btn" type="button">Sign In</button></a>
     </form>
   </main>
 </body>
