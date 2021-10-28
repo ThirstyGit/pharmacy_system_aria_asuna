@@ -1,0 +1,79 @@
+/* Necessary fonts from google font. */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* Basic styling. */
+:root {
+  --clr-primary: hsl(174, 100%, 29%);
+  --clr-primary-hvr: hsl(174, 100%, 33%);
+  --clr-secondary: hsl(0, 0%, 100%);
+  --fnt-clr: hsl(0, 0%, 27%);
+  --gray-primary: hsl(0, 0%, 73%);
+  --gray-secondary: hsl(0, 0%, 77%);
+  --red-primary: hsl(4, 90%, 58%);
+  --green-primary: hsl(160.4, 100%, 32.9%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'architects Daughter', sans-serif;
+  letter-spacing: 3px;
+}
+
+body {
+  background-color: var(--clr-primary);
+  min-height: 100vh;
+}
+
+legend {
+  font-size: 1.5rem;
+  color: var(--fnt-clr);
+  width: 100%;
+  text-align: center;
+  margin-bottom: 1.2rem;
+  padding-bottom: 0.7rem;
+  border-bottom: 1px solid var(--gray-secondary);
+}
+
+/* All Classes. */
+
+.form-container {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--clr-secondary);
+  padding: 2rem;
+  border-radius: 0.4rem;
+  box-shadow: 0px 0px 20px -10px;
+  width: 80%;
+  max-width: 20rem;
+  position: relative;
+}
+
+.form p {
+  width: 100%;
+}
+
+.form p label {
+  font-size: 1.2rem;
+  color: var(--fnt-clr);
+  margin-bottom: 0.4rem;
+}
+
+.form p input {
+  box-sizing: border-box;
+  padding: 0.25rem 0.5rem;
+  width: 100%;
+  margin-bottom: 1.4rem;
+  border: 2px solid var(--gray-primary);
+  outline: none;
+  font-size: 1.2rem;
+  letter-spacing: 0px;
+  font-family: 'Roboto', sans-serif;
+}
