@@ -41,7 +41,7 @@
         </div>
         <nav class="navbar navbar-expand-lg navigation" id="navbar">
             <div class="container">
-                <a class="navbar-brand" href="index.html">
+                <a class="navbar-brand" href="{% url 'home' %}">
                     <img src="images/logo.png" alt="" class="img-fluid">
                 </a>
 
@@ -52,19 +52,19 @@
                 <div class="collapse navbar-collapse" id="navbarmain">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item active">
-                            <a class="nav-link" href="index.html">Home</a>
+                            <a class="nav-link" href="{% url 'home' %}>Home</a>
                         </li>
-                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="cart.html">Cart</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{% url 'about' %}">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{% url 'cart' %}">Cart</a></li>
 
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="product.html" id="dropdown03" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Products <i class="icofont-thin-down"></i></a>
+                            <a class="nav-link dropdown-toggle" href="{% url 'product' %}" id="dropdown03" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Products <i class="icofont-thin-down"></i></a>
                             <ul class="dropdown-menu" aria-labelledby="dropdown03">
-                                <li><a class="dropdown-item" href="product.html">Medicines</a></li>
+                                <li><a class="dropdown-item" href="{% url 'product' %}">Medicines</a></li>
                             </ul>
                         </li>
 
-                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{% url 'contact' %}">Contact</a></li>
                     </ul>
                 </div>
             </div>
@@ -83,7 +83,7 @@
                         <h1 class="text-capitalize mb-5 text-lg">About Us</h1>
 
                         <!-- <ul class="list-inline breadcumb-nav">
-            <li class="list-inline-item"><a href="index.html" class="text-white">Home</a></li>
+            <li class="list-inline-item"><a href="{% url 'home' %}" class="text-white">Home</a></li>
             <li class="list-inline-item"><span class="text-white">/</span></li>
             <li class="list-inline-item"><a href="#" class="text-white-50">About Us</a></li>
           </ul> -->
