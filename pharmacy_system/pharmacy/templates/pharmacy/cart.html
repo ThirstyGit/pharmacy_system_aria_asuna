@@ -98,36 +98,16 @@
     </section>
     <!-- contact form start -->
 
-
-
-
     
-    <div class="form-output-container" id="form-output-container">
-        <div class="form-output">
+    <div class="cart-container" id="cart-container">
+        <div class="cart">
             <p>Image</p>
-            <p class="form-output-value">Name</p>
+            <p class="item-name">Name</p>
             <p>Quantity</p>
             <p>Price</p>
             <p>Remove</p>
         </div>
-        <div class="form-output">
-            <img class="form-output-image" src="https://images.unsplash.com/photo-1633371824243-d84b605958f4?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=600&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTYzNTcwMjIzOA&ixlib=rb-1.2.1&q=80&w=800" alt="">
-            <p class="form-output-value">
-            https://store.steampowered.com/app/1174180/Red_Dead_Redemption_2/
-            </p>
-            <p>5</p>
-            <p>500</p>
-            <button class="cart-button">Delete</button>
-        </div>
-        <div class="form-output">
-            <img  class="form-output-image"src="https://images.unsplash.com/photo-1633371824243-d84b605958f4?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=600&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTYzNTcwMjIzOA&ixlib=rb-1.2.1&q=80&w=800" alt="">
-            <p class="form-output-value">
-            https://store.steampowered.com/app/550/Left_4_Dead_2/
-            </p>
-            <p>5</p>
-            <p>500</p>
-            <button class="cart-button">Delete</button>
-        </div>
+        <p class="cart-empty-message" id="cart-empty-message">The Cart Is Empty</p>
     </div>
 
 
@@ -276,6 +256,7 @@
 
     <script src="{% static 'home/js/script.js' %}"></script>
     <script src="{% static 'home/js/contact.js' %}"></script>
+    <script src="{% static 'pharmacy/js/cart.js' %}"></script>
 
 </body>
 
