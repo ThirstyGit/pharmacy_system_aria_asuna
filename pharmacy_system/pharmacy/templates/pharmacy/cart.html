@@ -15,6 +15,7 @@
     <link rel="stylesheet" type="text/css" href="{% static 'plugins/slick-carousel/slick/slick.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'plugins/slick-carousel/slick/slick-theme.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'home/css/style.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'pharmacy/css/cart.css' %}">
 
 </head>
 
@@ -100,84 +101,34 @@
 
 
 
-    <div class="cd-cart cd-cart--empty js-cd-cart">
-        <a href="#0" class="cd-cart__trigger text-replace">
-          Cart
-          <ul class="cd-cart__count"> <!-- cart items count -->
-            <li>0</li>
-            <li>0</li>
-          </ul> <!-- .cd-cart__count -->
-        </a>
-
-        <div class="cd-cart__content">
-            <div class="cd-cart__layout">
-                <header class="cd-cart__header">
-                    <h2>Cart</h2>
-                    <span class="cd-cart__undo">Item removed. <a href="#0">Undo</a></span>
-                </header>
-
-                <div class="cd-cart__body">
-                    <ul>
-                        <!-- products added to the cart will be inserted here using JavaScript -->
-                    </ul>
-                </div>
-
-                <footer class="cd-cart__footer">
-                    <a href="#0" class="cd-cart__checkout">
-                        <em>Checkout - $<span>0</span>
-                  
-                </em>
-                    </a>
-                </footer>
-            </div>
+    
+    <div class="form-output-container" id="form-output-container">
+        <div class="form-output">
+            <p>Image</p>
+            <p class="form-output-value">Name</p>
+            <p>Quantity</p>
+            <p>Price</p>
+            <p>Remove</p>
         </div>
-        <!-- .cd-cart__content -->
-    </div>
-    <!-- cd-cart -->
-
-
-    <div class="cd-cart__body">
-
-        <ul>
-            <li class="cd-cart__product">
-
-                <a href="#0">
-                    <img src="{% static 'images/team/1.jpg'%}" alt="doctor-image">
-                </a>
-    </div>
-
-    <div class="cd-cart__details">
-        <h3 class="truncate"><a href="#0">Product Name</a></h3>
-
-        <span class="cd-cart__price">50/- tk</span>
-
-        <div class="cd-cart__actions">
-            <a href="" class="cd-cart__delete-item">Delete</a>
-
-            <div class="cd-cart__quantity">
-                <label for="cd-product-productId">Qty</label>
-
-                <span class="cd-cart__select">
-                    <select class="reset" id="cd-product-productId" name="quantity">
-                      <option value="1">1</option>
-                      <option value="2">2</option>
-                      <option value="3">3</option>
-                      <!-- ... -->
-                    </select>
-      
-                   
-                  </span>
-            </div>
+        <div class="form-output">
+            <img class="form-output-image" src="https://images.unsplash.com/photo-1633371824243-d84b605958f4?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=600&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTYzNTcwMjIzOA&ixlib=rb-1.2.1&q=80&w=800" alt="">
+            <p class="form-output-value">
+            https://store.steampowered.com/app/1174180/Red_Dead_Redemption_2/
+            </p>
+            <p>5</p>
+            <p>500</p>
+            <button class="cart-button">Delete</button>
         </div>
-
-        </li>
-
-        <!-- other products added to the cart -->
-        </ul>
+        <div class="form-output">
+            <img  class="form-output-image"src="https://images.unsplash.com/photo-1633371824243-d84b605958f4?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=600&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTYzNTcwMjIzOA&ixlib=rb-1.2.1&q=80&w=800" alt="">
+            <p class="form-output-value">
+            https://store.steampowered.com/app/550/Left_4_Dead_2/
+            </p>
+            <p>5</p>
+            <p>500</p>
+            <button class="cart-button">Delete</button>
+        </div>
     </div>
-
-
-
 
 
     <section class="contact-form-wrap section">

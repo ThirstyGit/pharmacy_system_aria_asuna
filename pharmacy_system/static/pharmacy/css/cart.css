@@ -1,0 +1,66 @@
+/* Fonts from fonts.google.com */
+/* Roboto and Charm */
+@import url('https://fonts.googleapis.com/css2?family=Charm&family=Roboto&display=swap');
+
+:root {
+  --gray-primary: rgb(211, 211, 211);
+  --orange-primary: hsl(0, 100%, 63%);
+  --orange-secondary: hsl(0, 100%, 67%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.form-output-container {
+  box-sizing: border-box;
+  background-color: white;
+  width: 95vw;
+  padding: 2rem;
+  border-radius: 0.3em;
+  border: 1px solid var(--gray-primary);
+  margin: 1em auto;
+}
+
+.form-output {
+  padding: 1em 0.5em;
+  display: grid;
+  grid-template-columns: 2fr 9fr 2fr 1fr 2fr;
+  place-items: center;
+  gap: 1em;
+}
+
+.form-output-value {
+  word-break: break-all;
+  font-size: 1.2rem;
+}
+
+.form-output-image {
+  height: 50px;
+  width: 100px;
+}
+
+.form-output:not(:last-child) {
+  border-bottom: 1px solid var(--gray-primary);
+}
+
+.cart-button {
+  color: rgb(247, 247, 247);
+  font-size: 1.2rem;
+  padding: 0.5em;
+  border: 0;
+  outline: 0;
+  background-color: var(--orange-primary);
+  border-radius: 0.3em;
+  cursor: pointer;
+}
+
+.cart-button:hover,
+.cart-button:focus {
+  background-color: var(--orange-secondary);
+}
+
+.cart-button:active {
+  background-color: var(--orange-primary);
+}
