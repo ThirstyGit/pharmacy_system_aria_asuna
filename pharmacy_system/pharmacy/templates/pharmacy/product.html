@@ -7,7 +7,7 @@
     <meta name="description" content="Orbitor,business,company,agency,modern,bootstrap4,tech,software">
     <meta name="author" content="themefisher.com">
 
-    <title>Online Pharmacy</title>
+    <title> Online Pharmacy</title>
 
     <link rel="shortcut icon" type="image/x-icon" href="{% static '/images/favicon.ico' %}" />
     <link rel="stylesheet" type="text/css" href="{% static 'plugins/bootstrap/css/bootstrap.min.css' %}">
@@ -44,7 +44,7 @@
         <nav class="navbar navbar-expand-lg navigation" id="navbar">
             <div class="container">
                 <a class="navbar-brand" href="{% url 'home' %}">
-                    <img src="images/logo.png" alt="" class="img-fluid">
+                    <img src="{% static 'images/logo.png'%}" alt="" class="img-fluid">
                 </a>
 
                 <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarmain" aria-controls="navbarmain" aria-expanded="false" aria-label="Toggle navigation">
@@ -82,187 +82,105 @@
                 <div class="col-md-12">
                     <div class="block text-center">
 
-                        <h1 class="text-capitalize mb-5 text-lg">Cart</h1>
-                        <span class="text-white">Get your necessary items today</span>
+                        <h1 class="text-capitalize mb-5 text-lg">Medicines</h1>
 
                         <!-- <ul class="list-inline breadcumb-nav">
             <li class="list-inline-item"><a href="{% url 'home' %}" class="text-white">Home</a></li>
             <li class="list-inline-item"><span class="text-white">/</span></li>
-            <li class="list-inline-item"><a href="#" class="text-white-50">Contact Us</a></li>
+            <li class="list-inline-item"><a href="#" class="text-white-50">All Doctors</a></li>
           </ul> -->
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- contact form start -->
 
 
-
-
-    <div class="cd-cart cd-cart--empty js-cd-cart">
-        <a href="#0" class="cd-cart__trigger text-replace">
-          Cart
-          <ul class="cd-cart__count"> <!-- cart items count -->
-            <li>0</li>
-            <li>0</li>
-          </ul> <!-- .cd-cart__count -->
-        </a>
-
-        <div class="cd-cart__content">
-            <div class="cd-cart__layout">
-                <header class="cd-cart__header">
-                    <h2>Cart</h2>
-                    <span class="cd-cart__undo">Item removed. <a href="#0">Undo</a></span>
-                </header>
-
-                <div class="cd-cart__body">
-                    <ul>
-                        <!-- products added to the cart will be inserted here using JavaScript -->
-                    </ul>
-                </div>
-
-                <footer class="cd-cart__footer">
-                    <a href="#0" class="cd-cart__checkout">
-                        <em>Checkout - $<span>0</span>
-                  
-                </em>
-                    </a>
-                </footer>
-            </div>
-        </div>
-        <!-- .cd-cart__content -->
-    </div>
-    <!-- cd-cart -->
-
-
-    <div class="cd-cart__body">
-
-        <ul>
-            <li class="cd-cart__product">
-
-                <a href="#0">
-                    <img src="images/team/1.jpg" alt="doctor-image">
-                </a>
-    </div>
-
-    <div class="cd-cart__details">
-        <h3 class="truncate"><a href="#0">Product Name</a></h3>
-
-        <span class="cd-cart__price">50/- tk</span>
-
-        <div class="cd-cart__actions">
-            <a href="" class="cd-cart__delete-item">Delete</a>
-
-            <div class="cd-cart__quantity">
-                <label for="cd-product-productId">Qty</label>
-
-                <span class="cd-cart__select">
-                    <select class="reset" id="cd-product-productId" name="quantity">
-                      <option value="1">1</option>
-                      <option value="2">2</option>
-                      <option value="3">3</option>
-                      <!-- ... -->
-                    </select>
-      
-                   
-                  </span>
-            </div>
-        </div>
-
-        </li>
-
-        <!-- other products added to the cart -->
-        </ul>
-    </div>
-
-
-
-
-
-    <section class="contact-form-wrap section">
+    <!-- portfolio -->
+    <section class="section doctors">
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-lg-6">
-                    <div class="section-title text-center">
+                <div class="col-lg-6 text-center">
+                    <div class="section-title">
+
+                        <div class="divider mx-auto my-4"></div>
 
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12">
-                    <form id="contact-form" class="contact__form " method="post" action="mail.php">
-                        <!-- form message -->
-                        <div class="row">
-                            <div class="col-12">
-                                <div class="alert alert-success contact__msg" style="display: none" role="alert">
-                                    Your purchase was successful.
-                                </div>
+
+
+            <div class="row shuffle-wrapper portfolio-gallery">
+                <div class="col-lg-3 col-sm-6 col-md-6 mb-4 shuffle-item" data-groups="[&quot;cat1&quot;,&quot;cat2&quot;]">
+                    <div class="position-relative doctor-inner-box">
+                        <div class="doctor-profile">
+                            <div class="doctor-img">
+                                <img src="{% static 'images/team/1.jpg' %}" alt="doctor-image" class="img-fluid w-100">
                             </div>
                         </div>
+                        <div class="content mt-3">
+                            <h4 class="mb-0">Napa</h4>
+                            <p>Napa (Paracetamol) is a fast acting and safe analgesic with marked antipyretic property. It is specially suitable for patients who, for any reason, can not tolerate aspirin or other analgesics. Napa suppositories are used for
+                                rapid symptomatic management of pain and fever.
+                            </p>
+                            <h4 class="mb-0">Price-50/- per page</h4>
+                            <a href="cart.html" class="btn btn-main-2 btn-round-full btn-icon">Add to cart<i class="icofont-simple-right ml-3"></i></a>
+                        </div>
+                    </div>
 
-                        <div class="row">
-                            <div class="col-lg-6">
-                                <div class="form-group">
-                                    <input name="name" id="name" type="text" class="form-control" placeholder="Your Full Name">
-                                </div>
-                            </div>
-
-                            <div class="col-lg-6">
-                                <div class="form-group">
-                                    <input name="email" id="email" type="email" class="form-control" placeholder="Your Email Address">
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="form-group">
-                                    <input name="items" id="subject" type="product" class="form-control" placeholder="Your Picked Items">
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="form-group">
-                                    <input name="phone" id="phone" type="text" class="form-control" placeholder="Your Phone Number">
-                                </div>
+                <div class="col-lg-3 col-sm-6 col-md-6 mb-4 shuffle-item" data-groups="[&quot;cat2&quot;]">
+                    <div class="position-relative doctor-inner-box">
+                        <div class="doctor-profile">
+                            <div class="doctor-img">
+                                <img src="{% static 'images/team/2.jpg'%}" alt="doctor-image" class="img-fluid w-100">
                             </div>
                         </div>
+                        <div class="content mt-3">
+                            <h4 class="mb-0">Flagyl 400</h4>
+                            <p>Flagyl 400 Tablet is a versatile antibiotic medicine that can be used to treat many different infections caused by bacteria. These include infections of the blood, brain, lungs, bones, joints, urinary tract, stomach, and intestines.
+                            </p>
+                            <h4 class="mb-0">Price-90/- per page</h4>
+                            <a href="cart.html" class="btn btn-main-2 btn-round-full btn-icon">Add to cart<i class="icofont-simple-right ml-3"></i></a>
+                        </div>
+                    </div>
+                </div>
 
-                        <div class="form-group-2 mb-4">
-
-
-                            <div class="text-center">
-                                <input class="btn btn-main btn-round-full" name="submit" class="form-control" type="submit" value="Purchase"> </input>
+                <div class="col-lg-3 col-sm-6 col-md-6 mb-4 shuffle-item" data-groups="[&quot;cat3&quot;]">
+                    <div class="position-relative doctor-inner-box">
+                        <div class="doctor-profile">
+                            <div class="doctor-img">
+                                <img src="{% static 'images/team/3.jpg'%}" alt="doctor-image" class="img-fluid w-100">
                             </div>
-                    </form>
+                        </div>
+                        <div class="content mt-3">
+                            <h4 class="mb-0">Aratrol</h4>
+                            <p>Alatrol® is indicated for the relief of symptoms associated with seasonal allergic rhinitis due to allergen. Symptoms treated effectively include sneezing, rhinorrhea, pruritus, ocular pruritus, tearing and redness of the eyes.
+                            </p>
+                            <h4 class="mb-0">Price-60/- per page</h4>
+                            <a href="cart.html" class="btn btn-main-2 btn-round-full btn-icon">Add to cart<i class="icofont-simple-right ml-3"></i></a>
+                        </div>
                     </div>
                 </div>
             </div>
-    </section>
 
 
-    <div class="google-map ">
-        <div id="map"></div>
-    </div>
-    <!-- footer Start -->
-    <footer class="footer section gray-bg">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 mr-auto col-sm-6">
-                    <div class="widget mb-5 mb-lg-0">
+            <footer class="footer section gray-bg">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-10 mr-auto col-sm-10">
+                            <div class="widget mb-5 mb-lg-0">
 
-                        <p>Contact us through the social media links if you can't reach us through the phone number.</p>
+                                <p>Contact us through the social media links if you can't reach us through the phone number.</p>
 
-                        <ul class="list-inline footer-socials mt-4">
-                            <li class="list-inline-item"><a href="https://www.facebook.com/themefisher"><i class="icofont-facebook"></i></a></li>
-                            <li class="list-inline-item"><a href="https://twitter.com/themefisher"><i class="icofont-twitter"></i></a></li>
-                            <li class="list-inline-item"><a href="https://www.pinterest.com/themefisher/"><i class="icofont-linkedin"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
+                                <ul class="list-inline footer-socials mt-4">
+                                    <li class="list-inline-item"><a href="https://www.facebook.com/themefisher"><i class="icofont-facebook"></i></a></li>
+                                    <li class="list-inline-item"><a href="https://twitter.com/themefisher"><i class="icofont-twitter"></i></a></li>
+                                    <li class="list-inline-item"><a href="https://www.pinterest.com/themefisher/"><i class="icofont-linkedin"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
 
 
-                <div class="col-lg-2 col-md-6 col-sm-6">
-                    <div class="widget mb-5 mb-lg-0">
-                        <h4 class="text-capitalize mb-3">Support</h4>
-                        <div class="divider mb-4"></div>
 
                         <ul class="list-unstyled footer-menu lh-35">
                             <li><a href="#">Terms & Conditions</a></li>
@@ -296,12 +214,23 @@
                         </div>
                     </div>
                 </div>
+        </div>
+
+
+
+        <div class="row">
+            <div class="col-lg-4">
+                <a class="backtop js-scroll-trigger" href="#top">
+                    <i class="icofont-long-arrow-up"></i>
+                </a>
             </div>
         </div>
-    </footer>
+        </div>
+        </div>
+        </footer>
 
 
-    <!-- 
+        <!-- 
     Essential Scripts
     =====================================-->
 
